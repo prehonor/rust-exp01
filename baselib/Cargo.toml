@@ -1,0 +1,18 @@
+[package]
+name = "clib"
+version = "0.1.0"
+authors = ["prehonor <ryx666@sina.cn>"]
+edition = "2018"
+build = "build.rs"
+
+
+[lib]
+crate-type = ["cdylib","rlib"]
+
+[dependencies]
+libc = "*"
+
+
+[build-dependencies]
+bindgen = "*"
+cc="*"
